@@ -50,5 +50,5 @@ module.exports = function(RED) {
 
     }
 
-    RED.nodes.registerType("hx711", GetWeight);
+    RED.nodes.registerType("hx711_custom", GetWeight);
 }
