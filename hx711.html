@@ -1,26 +1,25 @@
 <script type="text/javascript">
-    RED.nodes.registerType('hx711',{
+    RED.nodes.registerType('hx711_custom',{
         category: 'Raspberry Pi',
         color: '#a6bbcf',
         defaults: {
-            	name: {value:""},
-		hx_data: {value:"", "required": "true"},
-		hx_sck: {value:"", "required": "true"},
-		hx_scale: {value:"", "required": "true"},
-		hx_gain: {value:"128", "required": "true"},
-		hx_offset: {value:"0", "required": "true"},
-		hx_avrg: {value:"5", "required": "true"}
+               name: {value:""},
+               hx_data: {value:"", "required": "true"},
+               hx_sck: {value:"", "required": "true"},
+               hx_scale: {value:"", "required": "true"},
+               hx_gain: {value:"128", "required": "true"},
+               hx_offset: {value:"0", "required": "true"},
+               hx_avrg: {value:"5", "required": "true"}
         },
         inputs:1,
         outputs:1,
         icon: "font-awesome/fa-balance-scale",
         label: function() {
-            return this.name||"hx711";
+            return this.name||"hx711_custom";
         }
     });
 </script>
-
-<script type="text/html" data-template-name="hx711">
+<script type="text/html" data-template-name="hx711_custom">
     	<div class="form-row">
        		<label for="node-input-name"><i class="icon-tag"></i> Name</label>
         	<input type="text" id="node-input-name" placeholder="Name">
@@ -51,7 +50,7 @@
 	</div>
 </script>
 
-<script type="text/html" data-help-name="hx711">
+<script type="text/html" data-help-name="hx711_custom">
     <p>Simple node to get the weight value from a hx711, attached to the Raspberry Pis GPIOs.</p>
     <h3>Inputs</h3>
     <dl class="message-properties">
