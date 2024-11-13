@@ -1,7 +1,7 @@
 {
-  "name": "node-red-contrib-hx711",
-  "version": "1.0.7",
-  "description": "Node to connect a hx711 module",
+  "name": "node-red-contrib-hx711-custom",
+  "version": "1.0.0",
+  "description": "Custom Node to connect an hx711 module with scale input capability",
   "main": "hx711.js",
   "dependencies": {
     "@shroudedcode/hx711": "latest" 
@@ -13,17 +13,17 @@
     "node-red"
   ],
   "author": {
-    "name": "Robin Tönniges",
-    "email": "development@toenniges.org"
+    "name": "Sam Jasper",
+    "email": "samgjasper@gmail.com"
   }, 
   "license": "MIT",
   "node-red": {
     "nodes": {
-      "hx711": "hx711.js"
+      "hx711_custom": "hx711.js"
     }
   },
   "repository": {
-  "type" : "git",
-  "url" : "https://github.com/rtoenniges/node-red-contrib-hx711.git"
+    "type" : "git",
+    "url" : "https://github.com/NSAButForDogs/node-red-contrib-hx711-custom.git"
   }
 }
